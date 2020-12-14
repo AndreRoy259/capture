@@ -7,7 +7,6 @@ import { MovieState } from "../movieState";
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
 
-
 const MovieDetail = () => {
   const history = useHistory();
   const url = history.location.pathname;
@@ -80,6 +79,11 @@ const StyledAwards = styled.div`
   margin: 5rem 10rem;
   align-items: center;
   justify-content: space-around;
+
+  @media (max-width: 1300px) {
+    display: block;
+    margin: 2rem 2rem;
+  }
 `;
 
 const StyledAward = styled.div`
